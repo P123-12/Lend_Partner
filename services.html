@@ -1,0 +1,646 @@
+<!DOCTYPE html>
+<!-- HTML5 Document Type Declaration -->
+<html lang="en">
+  <head>
+    <!-- Character Encoding (UTF-8 standard) -->
+    <meta charset="UTF-8" />
+    
+    <!-- Viewport Settings for Mobile & Responsive Display -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Search Engine Optimization (SEO) Meta Description -->
+    <meta name="description" content="Explore our strategic finance and lending capabilities across residential, investment, commercial, development and asset finance." />
+    
+    <!-- Browser Tab Title -->
+    <title>Services | Lend Partners</title>
+
+    <!-- Preconnect hints to speed up Google Fonts loading -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    
+    <!-- Google Fonts: DM Sans (Body Font) & Libre Baskerville (Heading Font) -->
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet" />
+
+    <!-- Bootstrap 5 CSS Framework (CDN) -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+    <!-- Project Custom Stylesheet -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  
+  <!-- Page Body with data attribute for page-specific JS/CSS targeting -->
+  <body data-page="services">
+
+    <!-- ===================================================================
+         1. TOP ANNOUNCEMENT STRIP
+         Displays company tagline and Australian branch locations
+         =================================================================== -->
+    <div class="top-strip">
+      <div class="container d-flex justify-content-between align-items-center">
+        <!-- Tagline -->
+        <span>Strategic lending architecture for Australia</span>
+        <!-- Regional Advisory Offices -->
+        <span class="top-strip-contact">Melbourne &nbsp;·&nbsp; Sydney &nbsp;·&nbsp; Brisbane</span>
+      </div>
+    </div>
+
+    <!-- ===================================================================
+         2. PRIMARY SITE NAVIGATION
+         Header navbar with logo, service dropdown, page links & CTA button
+         =================================================================== -->
+    <nav class="navbar navbar-expand-lg site-nav" aria-label="Primary navigation">
+      <div class="container">
+        <!-- Site Brand / Company Logo -->
+        <a class="brand" href="index.html" aria-label="Lend Partners home">
+          <img src="assets/logo.png" alt="Lend Partners - Strategic Lending" class="site-logo" />
+        </a>
+
+        <!-- Mobile Hamburger Menu Button (collapses/expands on small screens) -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#siteMenu" aria-controls="siteMenu" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Collapsible Navigation Menu Items -->
+        <div class="collapse navbar-collapse" id="siteMenu">
+          <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-3">
+            
+            <!-- Services Dropdown Menu containing all 5 Lending Divisions -->
+            <li class="nav-item dropdown services-dropdown">
+              <a class="nav-link dropdown-toggle" href="services.html" id="servicesDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Services <span class="dropdown-chevron">▾</span>
+              </a>
+              <ul class="dropdown-menu shadow-lg border-0" aria-labelledby="servicesDropdown">
+                <li class="dropdown-header">Lending Divisions</li>
+                
+                <!-- Division 01: Commercial Property Finance -->
+                <li>
+                  <a class="dropdown-item" href="service-commercial.html">
+                    <div class="d-flex align-items-center gap-3">
+                      <span class="badge-num">01</span>
+                      <div>
+                        <div class="dropdown-item-title">Commercial Property Finance</div>
+                        <div class="dropdown-item-sub">Offices, retail, industrial &amp; medical</div>
+                      </div>
+                    </div>
+                    <span class="dropdown-item-arrow">→</span>
+                  </a>
+                </li>
+                
+                <!-- Division 02: Development & Structured Finance -->
+                <li>
+                  <a class="dropdown-item" href="service-development.html">
+                    <div class="d-flex align-items-center gap-3">
+                      <span class="badge-num">02</span>
+                      <div>
+                        <div class="dropdown-item-title">Development &amp; Structured Finance</div>
+                        <div class="dropdown-item-sub">Construction debt, mezzanine &amp; land</div>
+                      </div>
+                    </div>
+                    <span class="dropdown-item-arrow">→</span>
+                  </a>
+                </li>
+                
+                <!-- Division 03: Business & Corporate Finance -->
+                <li>
+                  <a class="dropdown-item" href="service-business.html">
+                    <div class="d-flex align-items-center gap-3">
+                      <span class="badge-num">03</span>
+                      <div>
+                        <div class="dropdown-item-title">Business &amp; Corporate Finance</div>
+                        <div class="dropdown-item-sub">Cashflow, working capital &amp; M&amp;A</div>
+                      </div>
+                    </div>
+                    <span class="dropdown-item-arrow">→</span>
+                  </a>
+                </li>
+                
+                <!-- Division 04: Residential & Investment Lending -->
+                <li>
+                  <a class="dropdown-item" href="service-residential.html">
+                    <div class="d-flex align-items-center gap-3">
+                      <span class="badge-num">04</span>
+                      <div>
+                        <div class="dropdown-item-title">Residential &amp; Investment Lending</div>
+                        <div class="dropdown-item-sub">Prestige residences, SMSF &amp; portfolios</div>
+                      </div>
+                    </div>
+                    <span class="dropdown-item-arrow">→</span>
+                  </a>
+                </li>
+                
+                <!-- Division 05: Asset & Equipment Finance -->
+                <li>
+                  <a class="dropdown-item" href="service-asset.html">
+                    <div class="d-flex align-items-center gap-3">
+                      <span class="badge-num">05</span>
+                      <div>
+                        <div class="dropdown-item-title">Asset &amp; Equipment Finance</div>
+                        <div class="dropdown-item-sub">Heavy machinery, logistics fleets &amp; plant</div>
+                      </div>
+                    </div>
+                    <span class="dropdown-item-arrow">→</span>
+                  </a>
+                </li>
+                
+                <!-- Dropdown Divider -->
+                <li><hr class="dropdown-divider"></li>
+                
+                <!-- View All Services Link -->
+                <li><a class="dropdown-item dropdown-view-all" href="services.html"><span>View all 5 divisions in detail</span> <span class="arrow">↗</span></a></li>
+              </ul>
+            </li>
+
+            <!-- Standard Top-Level Page Links -->
+            <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+            <li class="nav-item"><a class="nav-link" href="index.html#calculator">Calculator</a></li>
+            <li class="nav-item"><a class="nav-link" href="insights.html">Insights</a></li>
+            <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+          </ul>
+
+          <!-- Primary Header Action Button (Opens Consultation Modal) -->
+          <button class="btn btn-primary nav-cta ms-lg-4" type="button" data-bs-toggle="modal" data-bs-target="#enquiryModal">
+            Enquire now <span class="arrow" aria-hidden="true">↗</span>
+          </button>
+        </div>
+      </div>
+    </nav>
+
+    <!-- ===================================================================
+         3. MAIN CONTENT
+         =================================================================== -->
+    <main>
+      <!-- Services Hero Header Section -->
+      <section class="inner-hero" data-hero="services">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-8">
+              <!-- Eyebrow Subtitle -->
+              <p class="eyebrow"><span></span>Our capabilities</p>
+              <!-- Main Page Heading -->
+              <h1>Five strategic <em>finance categories.</em></h1>
+              <!-- Introductory Description -->
+              <p>We structure lending solutions across five distinct disciplines, ensuring your debt architecture aligns precisely with your commercial and wealth ambitions.</p>
+            </div>
+          </div>
+        </div>
+        <!-- Hero Background Vector Lines -->
+        <div class="inner-hero-lines"></div>
+      </section>
+
+      <!-- ===================================================================
+           SERVICES GRID SECTION (6 Financial Service Categories)
+           =================================================================== -->
+      <section class="section services-page-section">
+        <div class="container">
+          <div class="row g-4">
+            
+            <!-- -----------------------------------------------------------------
+                 SERVICE CARD 01: RESIDENTIAL FINANCE
+                 ----------------------------------------------------------------- -->
+            <div class="col-md-6" id="residential">
+              <article class="service-page-card reveal">
+                <!-- Visual Banner & Category Badge -->
+                <div class="service-card-art art-1">
+                  <span>01 / 06</span>
+                  <div class="abstract-icon">⌂</div>
+                  <img src="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?auto=format&fit=crop&w=1100&q=70" alt="Residential finance" loading="lazy" />
+                </div>
+                <!-- Card Text Content & Value Points -->
+                <div class="service-card-body">
+                  <span class="card-kicker">Home lending, refinancing, construction, self-managed super</span>
+                  <h2>Residential finance</h2>
+                  <p>Tailored borrowing structures designed around long-term wealth, not just the next purchase.</p>
+                  <!-- Feature List -->
+                  <ul>
+                    <li>Clear strategic specifications</li>
+                    <li>Broad market lender selection</li>
+                    <li>End-to-end transaction guidance</li>
+                  </ul>
+                  <!-- Call to Action Buttons -->
+                  <div class="d-flex align-items-center gap-3 mt-3">
+                    <a class="btn btn-outline-primary btn-sm" href="service-residential.html">Dedicated Division Page →</a>
+                    <a class="text-link" href="contact.html">Enquire <span class="arrow" aria-hidden="true">↗</span></a>
+                  </div>
+                </div>
+              </article>
+            </div>
+
+            <!-- -----------------------------------------------------------------
+                 SERVICE CARD 02: INVESTMENT FINANCE
+                 ----------------------------------------------------------------- -->
+            <div class="col-md-6" id="investment">
+              <article class="service-page-card reveal">
+                <!-- Visual Banner & Category Badge -->
+                <div class="service-card-art art-2">
+                  <span>02 / 06</span>
+                  <div class="abstract-icon">◫</div>
+                  <img src="https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&w=1100&q=70" alt="Investment finance" loading="lazy" />
+                </div>
+                <!-- Card Text Content & Value Points -->
+                <div class="service-card-body">
+                  <span class="card-kicker">Portfolio growth, equity release, SMSF, debt recycling</span>
+                  <h2>Investment finance</h2>
+                  <p>Preserve borrowing capacity, separate risk and unlock maximum tax-deductible efficiency.</p>
+                  <!-- Feature List -->
+                  <ul>
+                    <li>Clear strategic specifications</li>
+                    <li>Broad market lender selection</li>
+                    <li>End-to-end transaction guidance</li>
+                  </ul>
+                  <!-- Call to Action Buttons -->
+                  <div class="d-flex align-items-center gap-3 mt-3">
+                    <a class="btn btn-outline-primary btn-sm" href="service-residential.html">Dedicated Division Page →</a>
+                    <a class="text-link" href="contact.html">Enquire <span class="arrow" aria-hidden="true">↗</span></a>
+                  </div>
+                </div>
+              </article>
+            </div>
+
+            <!-- -----------------------------------------------------------------
+                 SERVICE CARD 03: COMMERCIAL FINANCE
+                 ----------------------------------------------------------------- -->
+            <div class="col-md-6" id="commercial">
+              <article class="service-page-card reveal">
+                <!-- Visual Banner & Category Badge -->
+                <div class="service-card-art art-3">
+                  <span>03 / 06</span>
+                  <div class="abstract-icon">▦</div>
+                  <img src="https://images.unsplash.com/photo-1497366754035-f200968a6e72?auto=format&fit=crop&w=1100&q=70" alt="Commercial finance" loading="lazy" />
+                </div>
+                <!-- Card Text Content & Value Points -->
+                <div class="service-card-body">
+                  <span class="card-kicker">Acquisition, refinance, owner-occupier, lease-doc</span>
+                  <h2>Commercial finance</h2>
+                  <p>Institutional-grade solutions for commercial property investors and business owners.</p>
+                  <!-- Feature List -->
+                  <ul>
+                    <li>Clear strategic specifications</li>
+                    <li>Broad market lender selection</li>
+                    <li>End-to-end transaction guidance</li>
+                  </ul>
+                  <!-- Call to Action Buttons -->
+                  <div class="d-flex align-items-center gap-3 mt-3">
+                    <a class="btn btn-outline-primary btn-sm" href="service-commercial.html">Dedicated Division Page →</a>
+                    <a class="text-link" href="contact.html">Enquire <span class="arrow" aria-hidden="true">↗</span></a>
+                  </div>
+                </div>
+              </article>
+            </div>
+
+            <!-- -----------------------------------------------------------------
+                 SERVICE CARD 04: DEVELOPMENT FINANCE
+                 ----------------------------------------------------------------- -->
+            <div class="col-md-6" id="development">
+              <article class="service-page-card reveal">
+                <!-- Visual Banner & Category Badge -->
+                <div class="service-card-art art-4">
+                  <span>04 / 06</span>
+                  <div class="abstract-icon">△</div>
+                  <img src="https://images.unsplash.com/photo-1541888946425-d81bb19240f5?auto=format&fit=crop&w=1100&q=70" alt="Development finance" loading="lazy" />
+                </div>
+                <!-- Card Text Content & Value Points -->
+                <div class="service-card-body">
+                  <span class="card-kicker">Construction, land subdivision, mezzanine, joint venture</span>
+                  <h2>Development finance</h2>
+                  <p>End-to-end capital advisory from site acquisition through to pre-sales and residual stock finance.</p>
+                  <!-- Feature List -->
+                  <ul>
+                    <li>Clear strategic specifications</li>
+                    <li>Broad market lender selection</li>
+                    <li>End-to-end transaction guidance</li>
+                  </ul>
+                  <!-- Call to Action Buttons -->
+                  <div class="d-flex align-items-center gap-3 mt-3">
+                    <a class="btn btn-outline-primary btn-sm" href="service-development.html">Dedicated Division Page →</a>
+                    <a class="text-link" href="contact.html">Enquire <span class="arrow" aria-hidden="true">↗</span></a>
+                  </div>
+                </div>
+              </article>
+            </div>
+
+            <!-- -----------------------------------------------------------------
+                 SERVICE CARD 05: ASSET & EQUIPMENT FINANCE
+                 ----------------------------------------------------------------- -->
+            <div class="col-md-6" id="asset">
+              <article class="service-page-card reveal">
+                <!-- Visual Banner & Category Badge -->
+                <div class="service-card-art art-5">
+                  <span>05 / 06</span>
+                  <div class="abstract-icon">◇</div>
+                  <img src="https://images.unsplash.com/photo-1568605117036-5fe5e7bab0b7?auto=format&fit=crop&w=1100&q=70" alt="Asset &amp; Equipment finance" loading="lazy" />
+                </div>
+                <!-- Card Text Content & Value Points -->
+                <div class="service-card-body">
+                  <span class="card-kicker">Vehicles, machinery, equipment and business assets</span>
+                  <h2>Asset &amp; Equipment finance</h2>
+                  <p>Preserve working capital while equipping your business with revenue-generating infrastructure.</p>
+                  <!-- Feature List -->
+                  <ul>
+                    <li>Clear strategic specifications</li>
+                    <li>Broad market lender selection</li>
+                    <li>End-to-end transaction guidance</li>
+                  </ul>
+                  <!-- Call to Action Buttons -->
+                  <div class="d-flex align-items-center gap-3 mt-3">
+                    <a class="btn btn-outline-primary btn-sm" href="service-asset.html">Dedicated Division Page →</a>
+                    <a class="text-link" href="contact.html">Enquire <span class="arrow" aria-hidden="true">↗</span></a>
+                  </div>
+                </div>
+              </article>
+            </div>
+
+            <!-- -----------------------------------------------------------------
+                 SERVICE CARD 06: BUSINESS & CORPORATE FINANCE
+                 ----------------------------------------------------------------- -->
+            <div class="col-md-6" id="corporate">
+              <article class="service-page-card reveal">
+                <!-- Visual Banner & Category Badge -->
+                <div class="service-card-art art-6">
+                  <span>06 / 06</span>
+                  <div class="abstract-icon">💼</div>
+                  <img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=1100&q=70" alt="Business &amp; Corporate finance" loading="lazy" />
+                </div>
+                <!-- Card Text Content & Value Points -->
+                <div class="service-card-body">
+                  <span class="card-kicker">Working capital, debtor finance, growth &amp; acquisitions</span>
+                  <h2>Business &amp; Corporate finance</h2>
+                  <p>Flexible enterprise debt solutions that support operational scaling and strategic expansion.</p>
+                  <!-- Feature List -->
+                  <ul>
+                    <li>Clear strategic specifications</li>
+                    <li>Broad market lender selection</li>
+                    <li>End-to-end transaction guidance</li>
+                  </ul>
+                  <!-- Call to Action Buttons -->
+                  <div class="d-flex align-items-center gap-3 mt-3">
+                    <a class="btn btn-outline-primary btn-sm" href="service-business.html">Dedicated Division Page →</a>
+                    <a class="text-link" href="contact.html">Enquire <span class="arrow" aria-hidden="true">↗</span></a>
+                  </div>
+                </div>
+              </article>
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+      <!-- ===================================================================
+           HOW WE WORK / 3-STEP ADVISORY PROCESS
+           =================================================================== -->
+      <section class="section section-soft service-process">
+        <div class="container">
+          <div class="row align-items-end g-4">
+            <!-- Process Header & Explanation -->
+            <div class="col-lg-7">
+              <p class="eyebrow"><span></span>How we work</p>
+              <h2>One structure. <em>Many moving parts.</em></h2>
+              <p class="section-lead">The right lending outcome rarely comes from a single product. Our process keeps your bigger picture in focus while we handle the detail.</p>
+            </div>
+            <!-- Strategist Consultation CTA -->
+            <div class="col-lg-5 text-lg-end">
+              <a href="contact.html" class="btn btn-primary">Speak with a strategist <span class="arrow" aria-hidden="true">↗</span></a>
+            </div>
+          </div>
+
+          <!-- 3 Step Horizontal/Vertical Cards -->
+          <div class="process-list mt-5">
+            <!-- Step 1: Client Discovery -->
+            <div class="process-item">
+              <span>01</span>
+              <div>
+                <h3>Listen first</h3>
+                <p>We take time to understand your purpose, priorities, entities, timeline and appetite for risk.</p>
+              </div>
+            </div>
+            <!-- Step 2: Architecture & Scenarios -->
+            <div class="process-item">
+              <span>02</span>
+              <div>
+                <h3>Design the structure</h3>
+                <p>We test scenarios across our lender panel and build a clear, considered borrowing architecture.</p>
+              </div>
+            </div>
+            <!-- Step 3: Execution & Settlement -->
+            <div class="process-item">
+              <span>03</span>
+              <div>
+                <h3>Deliver with precision</h3>
+                <p>We manage the application from strategy through to settlement, keeping you informed at every turn.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- ===================================================================
+         4. SITE FOOTER & LEGAL COMPLIANCE
+         =================================================================== -->
+    <footer class="site-footer">
+      <div class="container">
+        <div class="row gy-5">
+          <!-- Company Bio & Contact Link -->
+          <div class="col-lg-5">
+            <a class="brand brand-light" href="index.html">
+              <img src="assets/logo-light.png" alt="Lend Partners - Strategic Lending" class="site-logo site-logo-light" />
+            </a>
+            <p class="footer-intro">Strategic lending architecture for people and businesses moving with intent. Thoughtful advice, disciplined execution, and a better way forward.</p>
+            <a class="text-link text-link-light" href="contact.html">Start a conversation <span class="arrow" aria-hidden="true">↗</span></a>
+          </div>
+
+          <!-- Explore Navigation Links Column -->
+          <div class="col-6 col-lg-2 offset-lg-1">
+            <p class="footer-label">Explore</p>
+            <ul class="footer-links">
+              <li><a href="services.html">Services</a></li>
+              <li><a href="about.html">Our team</a></li>
+              <li><a href="insights.html">Insights</a></li>
+              <li><a href="index.html#calculator">Calculator</a></li>
+            </ul>
+          </div>
+
+          <!-- Office Locations & Telephone Contacts -->
+          <div class="col-6 col-lg-2">
+            <p class="footer-label">Connect</p>
+            <ul class="footer-links">
+              <li><a href="contact.html">Melbourne office</a></li>
+              <li><a href="contact.html">Sydney office</a></li>
+              <li><a href="contact.html">1300 221 888</a></li>
+              <li><a href="mailto:hello@lendpartners.com.au">Email us</a></li>
+            </ul>
+          </div>
+
+          <!-- Regulatory & Compliance Links -->
+          <div class="col-lg-2">
+            <p class="footer-label">Compliance &amp; Legal</p>
+            <ul class="footer-links">
+              <li><a href="privacy.html">Privacy policy</a></li>
+              <li><a href="terms.html">Terms of use</a></li>
+              <li><a href="complaints.html">Feedback &amp; complaints</a></li>
+              <li><a href="contact.html">Credit guide</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Mandatory Australian Credit Activity Disclosure & Licensing Box -->
+        <div class="footer-compliance-box mt-5 pt-4 border-top border-secondary border-opacity-25">
+          <p class="small text-light text-opacity-75 mb-2">
+            <strong>Credit Activity Disclosure:</strong> Lend Partners Group Pty Ltd ABN 45 632 405 504 is an authorised corporate credit representative (Credit Representative No. 517792) of LMG Broker Services Pty Ltd ACN 632 405 504 Australian Credit Licence 517192.
+          </p>
+          <p class="small text-light text-opacity-75 mb-0">
+            <strong>Disclaimer Statement:</strong> The information provided on this site is on the understanding that it is for illustrative and discussion purposes only. Whilst all care and attention is taken in its preparation any party seeking to rely on its content or otherwise should make their own enquiries and research to ensure its relevance to your specific personal and business requirements and circumstances. Terms, conditions, fees and charges may apply. Normal lending criteria apply. Rates subject to change. Approved applicants only.
+          </p>
+        </div>
+
+        <!-- Copyright & ACL Notice Bar -->
+        <div class="footer-bottom">
+          <span>© 2026 Lend Partners Group Pty Ltd</span>
+          <span>Authorised Credit Representative 517792 · ACL 517192</span>
+          <span>Built for what comes next.</span>
+        </div>
+      </div>
+    </footer>
+
+    <!-- ===================================================================
+         5. STICKY CALL-TO-ACTION BUTTON
+         Fixed button on bottom-right of viewport for fast conversions
+         =================================================================== -->
+    <button class="btn btn-primary sticky-enquire-btn" type="button" data-bs-toggle="modal" data-bs-target="#enquiryModal">
+      Enquire now ↗
+    </button>
+
+    <!-- ===================================================================
+         6. FLOATING INTERACTIVE LEAD CAPTURE CHATBOT
+         Allows prospective borrowers to interact, ask questions & book calls
+         =================================================================== -->
+    <div class="chatbot-container">
+      <!-- Chatbot Bubble Toggle Button with Online Indicator -->
+      <button class="chatbot-toggle" id="chatbotToggle" type="button" aria-label="Open Chat Assistant">
+        <span>💬</span>
+        <span class="badge-dot" title="Online"></span>
+      </button>
+
+      <!-- Chatbot Floating Window -->
+      <div class="chatbot-window" id="chatbotWindow">
+        <!-- Chatbot Window Header -->
+        <div class="chatbot-header">
+          <div>
+            <strong>Lend Partners Assistant</strong>
+            <small>Online &nbsp;·&nbsp; Melbourne Advisory Desk</small>
+          </div>
+          <!-- Close Chatbot Window Button -->
+          <button class="chatbot-close" id="chatbotClose" type="button" aria-label="Close chat">×</button>
+        </div>
+
+        <!-- Chat Conversation Messages Body -->
+        <div class="chatbot-body" id="chatMessages">
+          <!-- Bot Introductory Message -->
+          <div class="chat-msg chat-msg-bot">
+            Hello! I am your Lend Partners credit assistant. How can we support your lending strategy today?
+          </div>
+          <!-- Clickable Fast Prompt Action Buttons -->
+          <div class="chat-quick-actions">
+            <button class="chat-action-btn" type="button" data-action="borrowing">Check borrowing capacity</button>
+            <button class="chat-action-btn" type="button" data-action="celeste">Speak with Celeste Thomas</button>
+            <button class="chat-action-btn" type="button" data-action="commercial">Commercial property finance</button>
+            <button class="chat-action-btn" type="button" data-action="enquiry">Book a discovery call</button>
+          </div>
+        </div>
+
+        <!-- Chat Input Form & Send Button -->
+        <div class="chatbot-footer">
+          <form id="chatForm">
+            <input class="chatbot-input" id="chatInput" type="text" placeholder="Type your question..." autocomplete="off" required />
+            <button class="chatbot-send" type="submit" aria-label="Send message">↗</button>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <!-- ===================================================================
+         7. ENQUIRY MODAL POPUP FORM
+         Full lead generation modal form triggered by CTA buttons
+         =================================================================== -->
+    <div class="modal fade" id="enquiryModal" tabindex="-1" aria-labelledby="enquiryModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <!-- Modal Header -->
+          <div class="modal-header">
+            <div>
+              <span class="eyebrow mb-1"><span></span>Priority Consultation</span>
+              <h5 class="modal-title" id="enquiryModalLabel">Strategic Lending Enquiry</h5>
+            </div>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+
+          <!-- Modal Body containing Enquiry Form -->
+          <div class="modal-body">
+            <p class="small text-muted mb-3">Complete the form below. Enquiries are routed directly to our designated credit desk at <strong>hello@lendpartners.com.au</strong>.</p>
+            
+            <form id="enquiryForm">
+              <!-- Full Name Input -->
+              <div class="mb-3">
+                <label for="enqName" class="form-label small fw-bold">Full Name *</label>
+                <input type="text" class="form-control" id="enqName" placeholder="e.g. Alexandra Smith" required />
+              </div>
+
+              <!-- Contact Information Row: Email & Phone -->
+              <div class="row g-2 mb-3">
+                <div class="col-sm-6">
+                  <label for="enqEmail" class="form-label small fw-bold">Email Address *</label>
+                  <input type="email" class="form-control" id="enqEmail" placeholder="you@company.com" required />
+                </div>
+                <div class="col-sm-6">
+                  <label for="enqPhone" class="form-label small fw-bold">Phone Number *</label>
+                  <input type="tel" class="form-control" id="enqPhone" placeholder="0400 000 000" required />
+                </div>
+              </div>
+
+              <!-- Service Type & Loan Target Row -->
+              <div class="row g-2 mb-3">
+                <div class="col-sm-6">
+                  <label for="enqService" class="form-label small fw-bold">Service Required</label>
+                  <select class="form-select" id="enqService">
+                    <option value="Residential finance" selected>Residential finance</option>
+                    <option value="Investment finance">Investment finance</option>
+                    <option value="Commercial finance">Commercial finance</option>
+                    <option value="Development finance">Development finance</option>
+                    <option value="Asset finance">Asset finance</option>
+                    <option value="Deals & Memberships">Deals &amp; Memberships</option>
+                  </select>
+                </div>
+                <div class="col-sm-6">
+                  <label for="enqAmount" class="form-label small fw-bold">Target Loan Amount</label>
+                  <input type="text" class="form-control" id="enqAmount" placeholder="e.g. $1,500,000" />
+                </div>
+              </div>
+
+              <!-- Message / Additional Context Field -->
+              <div class="mb-3">
+                <label for="enqMessage" class="form-label small fw-bold">Lending Goals &amp; Context</label>
+                <textarea class="form-control" id="enqMessage" rows="3" placeholder="Tell us about the property, your timeframe, or entity setup..."></textarea>
+              </div>
+
+              <!-- Form Submit Button -->
+              <button type="submit" class="btn btn-primary w-100 py-2">
+                Submit Enquiry to Credit Team <span class="arrow">↗</span>
+              </button>
+
+              <!-- Dynamic Feedback Message Container (shown via main.js) -->
+              <div class="enquiry-feedback"></div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ===================================================================
+         8. JAVASCRIPT DEPENDENCIES
+         =================================================================== -->
+    <!-- Bootstrap 5 JavaScript Bundle with Popper (Powers dropdowns, toggler & modal) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <!-- Custom Application Logic (Handles Chatbot, Form Submission & Interactive Features) -->
+    <script src="main.js"></script>
+  </body>
+</html>
