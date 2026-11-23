@@ -92,16 +92,6 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
-  // Services Dropdown: Clicking parent navigates to services.html on desktop
-  const servicesDropdownToggle = document.querySelectorAll('.services-dropdown > .dropdown-toggle');
-  servicesDropdownToggle.forEach((toggle) => {
-    toggle.addEventListener('click', (e) => {
-      if (window.innerWidth >= 992) {
-        window.location.href = toggle.getAttribute('href') || 'services.html';
-      }
-    });
-  });
-
   // Sai Divisions interactive active-pop hover switcher
   const saiCards = document.querySelectorAll('.sai-card');
   if (saiCards.length) {
